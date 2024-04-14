@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Campana';
+            src: url('CampanaScript_PERSONAL_USE_ONLY.otf') format('opentype');
+        }
+        h1{
+            font-family: 'Campana';
+            font-size: 11em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando fontes externas</h1>
+    <p>Usamos o @font-face{} quando temos a fonte baixada</p>
+    <h2>Tipos de format()</h2>
+    <p>format(): tem os seguintes tipos:</p>
+    <ul>
+        <li>'opentype' para otf</li>
+        <li>'truetype' para ttf</li>
+        <li>embedded-opentype(Apple Advanced Typography)</li>
+        <li>truetype-aat</li>
+        <li>svg</li>
+    </ul>
+    <blockquote cite="https://www.mansgreback.com/">
+        Fonte escolhida foi a Compana Script, de: <a href="https://www.mansgreback.com/" hreflang="en" target="_blank" rel="author">Mans Greback</a>. Baixada apenas para testes de aprendizado. Aqui vai uma <a href="https://www.dafont.com/pt/mans-greback.d2878?text=campana" hreflang="pt-br" target="_blank" type="external">lista de fontes de Mans Greback</a> publicado no <a href="https://www.dafont.com/pt/" hreflang="pt-br" target="_blank" rel="external">dafont.com/pt/</a>. 
+    </blockquote>
+    
+    <hr>
+    <p><a href="https://www.dafont.com/pt/" target="_blank">Dafont.com/pt</a>, site para mais opções de fontes</p>
+</body>
+</html>
