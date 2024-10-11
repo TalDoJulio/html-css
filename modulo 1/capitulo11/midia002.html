@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com iframes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin: 0px;
+            padding: 0px;
+        }
+        body, html {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #tela {
+            background-color: lightgray;
+            width: 650px;
+
+        }
+
+        header {
+            background-color: white;
+        }
+        header > h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reprodutor de audio num site qualquer</h1>
+    </header>
+
+    <section id="menu">
+        <ol>
+            <li><a href="midia/AUD-20240819-WA0021.mp3" target="frame">msc 1 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0022.mp3" target="frame">msc 2 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0023.mp3" target="frame">msc 3 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0024.mp3" target="frame">msc 4 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0025.mp3" target="frame">msc 5 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0026.mp3" target="frame">msc 6 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0027.mp3" target="frame">msc 7 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0028.mp3" target="frame">msc 8 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0029.mp3" target="frame">msc 9 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0030.mp3" target="frame">msc 10 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0031.mp3" target="frame">msc 11 &#x2714</a></li>
+            <li><a href="#" target="_blank">msc 12</a></li>
+            <li><a href="#" target="_blank">msc 13</a></li>
+            <li><a href="#" target="_blank">msc 14</a></li>
+            <li><a href="#" target="_blank">msc 15</a></li>
+            <li><a href="midia/AUD-20240819-WA0036.mp3" target="frame">msc 16 &#x2714</a></li>
+            <li><a href="#" target="_blank">msc 17</a></li>
+            <li><a href="#" target="_blank">msc 18</a></li>
+            <li><a href="#" target="_blank">msc 19</a></li>
+            <li><a href="#" target="_blank">msc 20</a></li>
+            <li><a href="#" target="_blank">msc 21</a></li>
+            <li><a href="#" target="_blank">msc 22</a></li>
+        </ol>
+    </section>
+
+    <main id="tela">
+        <p>os links com &#x2714 sao os que contem musicas</p>
+        <iframe name="frame" srcdoc="Escolha a musica">
+        </iframe>
+    </main>
+
+    <footer>
+        <p><a href="https://www.instagram.com/dias_ihury?igsh=MXRiM2RqeWM2ajJxMA==" target="_blank">Ihury beautiful</a></p>
+    </footer>
+</body>
+</html>
