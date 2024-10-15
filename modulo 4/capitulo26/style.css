@@ -1,0 +1,21 @@
+@charset "UTF-8";
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body, html {
+    background-color: gray;
+}
+#login {
+    background-color: white;
+}
+
+#imagem {
+    background-image: black url(metal.jpg) bottom center no-repeat;
+}
+
+#formulario {
+    background-color: white;
+}
