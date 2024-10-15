@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Campana';
+    src: url('modulo 2/capitulo14/CampanaScript_PERSONAL_USE_ONLY.otf')
+    format('opentype');
+}
+
+
+
+header > p {
+    font-family: 'Campana';
+    font-size: 2em;
+    font-weight: normal;
+}
