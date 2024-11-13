@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body, html {
+            background-color: black;
+            color: white;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header {
+            background-color: lightgray;
+            color: black;
+            padding: 10px 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        header > nav {
+            text-align: left;
+            
+        }
+
+
+
+
+
+        main#container {
+            background-color: white;
+            color: black;
+            margin: 0px auto;
+            width: 75vw;
+            font-size: 3vw;
+            border-radius: 10px;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com caixas</h1>
+        <nav>
+            <a href="roda.png" target="frame">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main id="container">
+        <section>
+            <article>
+                <h1>Artigo 1</h1>
+            </article>
+            <article id="tela">
+                <iframe name="frame" srcdoc="Teste com iframes"></iframe>
+            </article>
+            
+        </section>
+    </main>
+
+</body>
+</html>
