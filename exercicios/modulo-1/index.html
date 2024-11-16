@@ -25,12 +25,122 @@
             Existe 2 jeitos de por imagens com HTML <br>
             A primeira é com imagens internas, que ja estao baixadas no pc,
             a segunda é com imagens externas, imagens que estao pela internet copiando a url da imagem. <br>
-            Exemplo de imagem externa:
-            <img src="https://th.bing.com/th/id/OIP.o-gU0VAeMrAADBjyKXrNXwHaE8?rs=1&pid=ImgDetMain" alt="Logo-JS">
+            Exemplo de imagem externa: 
         </p>
+        <div class="container-img">
+            <img src="https://th.bing.com/th/id/OIP.o-gU0VAeMrAADBjyKXrNXwHaE8?rs=1&pid=ImgDetMain" alt="Logo-JS">
+        </div>
 
         <h2>Hierarquia de titulos</h2>
         <p>Para criar titulos em HTML podemos usar as tags &lt;h1&gt;...&lt;h6&gt;Aqui vai o titulo&lt;/h1&gt;...&lt;/h6&gt;</p>
+        <h2>Simbolos especiais</h2>
+        <p>Vamos adicionar alguns simbolos especiais:
+            &nbsp;
+            &reg;
+            &copy;
+            &trade;
+            &euro;
+            &pound;
+            &yen;
+            &cent;
+            &empty;
+            &sum;
+            &delta;
+            &larr;
+            &uarr;
+            &rarr;
+            &darr;
+        </p>
+        <h2>Emojis</h2>
+        <p>Vamos adicionar alguns emojis:
+            &#x1F40A;
+            &#x1F47B;
+            &#x1F9E0;
+            &#x1F30E;
+            &#x1F340;
+            &#x1F4BB;
+            &#x1F685;
+            &#x1F1E7;&#x1F1F7;
+            &#x1F596;
+            &#x1F913;
+        </p>
+        <p>Para criar um emoji basta colocar o codepoint do emoji depois de &#x(codepoint), terminando com ; (ponto e virgula).</p>
+        <h2>Semantica</h2>
+        <p><q>Semantica é o significado dos vocabulos, por oposição a suja forma</q></p>
+        <h3>Tags morrem, voce sabia?</h3>
+        <p>Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags &lt;font&gt; e &lt;center&gt;. E existem outras que simplesmente foram excluidas das versoes mais atuais da HTML5, como é o caso do &lt;applet&gt; e &lt;blink&gt;.</p>
+        <p>Para falar que é um endereço coloque o que voce quer que o navegador intenda que é um endereço entre &lt;address&gt;Aqui vai o endereço&lt;/address&gt;</p>
+        <p>Eu por exemplo moro em <address>Monte Verde - Florianopolis SC</address></p>
+        <h3>Negrito e Italico</h3>
+        <p>Para aplicar o <strong>NEGRITO</strong>, basta escrever qualquer coisa dentro da tag &lt;strong&gt;Aqui vai o conteudo&lt;/strong&gt;</p>
+        <p>Para aplicar o <em>ENFASE</em>, basta escrever qualquer coisa dentro da tag &lt;em&gt;Aqui vai o conteudo&lt;/em&gt;</p>
+        <h3>Marca Texto</h3>
+        <p>Para <mark>marcar um texto</mark>, como fiz agora, basta escrever qualquer coisa dentro da tag &lt;mark&gt;Aqui vai o conteudo&lt;/mark&gt;</p>
+        <h3>Big morreu, mas o small ainda sobrevive</h3>
+        <p>A tag <del>&lt;big&gt;</del> que deixava o texto maior, foi deletada do HTML5</p>
+        <p>Para <small>deixar um texto menor</small>, basta escrever algo dentro da tag &lt;small&gt;Aqui vai o conteudo&lt;/small&gt;</p>
+        <h3>Texto Deletado / Inserido</h3>
+        <p>Para <del>deixar o texto anulado</del> (<q>Como se tivesse sido deletado</q>), basta escrever qualquer coisa dentro da tag &lt;del&gt;Aqui vai o conteudo&lt;/del&gt;</p>
+        <p>Ja o <ins>texto inserido</ins> é o oposto do <del>texto deletado</del> que acabamos de ver. Basta escrever qualquer coisa dentro da tag &lt;ins&gt;Aqui vai o conteudo&lt;/ins&gt;</p>
+        <h3>Texto Sobrescrito / Subscrito</h3>
+        <p>Texto Sobrescritos<sup>2</sup>, tag: &lt;sup&gt;</p>
+        <p>Texto Subscrito<sub>2</sub>, tag: &lt;sub&gt;</p>
+        <h3>Citações / Codigo</h3>
+        <p>Trechos de codigos: Nós somos programadores, e por isso compartilhamos muitos codigos-fonte em diversas linguagens. Para isso, existe a tag &lt;code&gt; onde voce pode delimitar seu codigo.A principal vantagem no uso dessa tag é o valor semantico que ela representa, indicando ao seu navegador que se trata de um codigo de computador.</p>
+        <h4>Exemplo de código em Python</h4>
+        <pre>
+            <code>
+                num = int(input('Digite um numero:'))
+                if num % 2 == 0:
+                    print(f'O numero {num} é par')
+                else:
+                    print(f'O numero {num} é impar)
+                print('Fim do programa')
+            </code>
+        </pre>
+        <p>Aqui resolvemos um problema com a tag &lt;pre&gt;, que mantem, incluindo quebras de linhas, espaços e tabulações.</p>
+        <h4>Citações</h4>
+        <p>Para criar uma citação em HTML5, podemos usar a tag &lt;q&gt; (do Ingles, quote, que significa <q>CITAR</q>)</p>
+        <p>
+            Tambem podemos criar citações mais longas (em bloco) e que tenham um paragrafo so para si. Nesse caso colocamos tudo dentro de &lt;blockquote&gt;
+            <blockquote cite="https://www.cursoemvideo.com/">
+                Todo conteudo nesse <q>mini site</q>, foi graças ao nosso professor mais querido da programação, <a href="https://www.cursoemvideo.com/" target="_blank">Gustavo Guanabara</a>, do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Canal no YT</a>
+            </blockquote>
+        </p>
+        <h3><abbr title="&lt;abbr&gt;">Abreviações</abbr></h3>
+        <p>Sempre que voce quiser escrever uma sigla, mas deixar claro ao usuario e aos mecanismos de busca do navegador, use a tag &lt;abbr&gt;</p>
+        <h3>Texto Invertido</h3>
+        <p>Para começo de conversa, BDO significa bi-directional-override. Ao usar a tag &lt;bdo&gt;, coloque um dos parametros: DIR para indicar uma das duas direções: rtl = direita para esquerda(right-to-left); ltr = esquerda para direita(left-to-right)</p>
+        <p><bdo dir="rtl">Texto invertido</bdo></p>
+        <h2>Listas OL e UL</h2>
+        <p>Para criar um <abbr title="OL">Lista Ordenada</abbr>, vamos usar a tag &lt;ol&gt; e para delimitar a lista usa o &lt;li&gt;</p>
+        <p>Mesma coisa para a <abbr title="UL">lista NÃo ordenada</abbr>, so que inves de usar &lt;ol&gt;, usamos &lt;ul&gt;.</p>
+        <h3>Lista de Definições</h3>
+        <p>Toda lista de definições está dentro de uma tag &lt;dl&gt;(Definition list) cada termo é um &lt;dt&gt;(Definition term) e cada descrição é um &lt;dd&gt;</p>
+        <h4>Exemplo:</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação utilizada para criar o conteudo de sites.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de estilos de sites.</dd>
+            <dt>JavaScript</dt>
+            Linguagem de programação para criar interatividades em sites.
+        </dl>
+        <h2>Links</h2>
+        <p>Para criar um hyperlink, devemos criar ancoras atraves da tag &lt;a&gt;. O principal atributo dessa tag é o href, dentro desse atributo, usamos uma URL completa para o site. HREFLANG='pt-br'. TARGET = _blank, _self, _top, _parent e caso esteja usando frames usar o name do frame</p>
+        <p>Esse link é seu ou dos outros? Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo REL. Esse atributo aceita varios valores, entre eles:</p>
+        <dl>
+            <dt>Next</dt>
+            <dd>Indica que o link é para a proxima parte do documento atual.</dd>
+            <dt>Prev</dt>
+            <dd>Indica que o link é para a parte anterior do documento atual.</dd>
+            <dt>Author</dt>
+            <dd>Indica que é um link para o site do autor do documento atual.</dd>
+            <dt>External</dt>
+            <dd>Indica que é um link para outro site que nao faz parte do site atual.</dd>
+            <dt>Nofollow</dt>
+            <dd>Indica que é um link para um site não endosado, como um link pago.</dd>
+        </dl>
     </main>
 </body>
 </html>
