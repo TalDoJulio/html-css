@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes/elementos</title>
+    <style>
+        #titulo-princ{
+            font-size: 3.5em;
+            text-align: center;
+        }
+        h1{
+            font-size: 2.8em;
+        }
+        div{
+            background-color: lightgray;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover{
+            background-color: greenyellow;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: red;
+            background-color: black;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a::after {
+            content: ' [link]';
+        }
+        a::before{
+            content: ' [link] ';
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-princ">Pseudo-classes / Pseudo-elementos</h1>
+    <h1>Pseudo-classes</h1>
+    <p>Pseudo-classes definem estados de elementos dentro da HTML.</p>
+    <div>Uma div é um espaço qualquer.</div>
+    <div>O border da linha 13, é uma shorthand para border.</div>
+    <div>: esses dois pontos é oque chamamos de pseudo classes</div>
+    <p>As pseudo classes tem q tar relacionadas a um elemento ou a uma classe</p>
+    <h2>Exemplo de Hover</h2>
+    <p>Passe o mause sobre o texto abaixo</p>
+    <div>
+        Passe o mause aqui
+        <p>Texto escondido</p>
+    </div>
+    <h1>Pseudo-elementos</h1>
+    <p>Já os Pseudo-elementos, ele pode agir nas classes, elementos e id, eles mexem diretamente no conteudo. Os pseudo elementos sao representados por :: dois pontos</p>
+    <h2>Links</h2>
+    <p>Personalizando links</p>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Reposítorio Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>
