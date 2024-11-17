@@ -16,11 +16,11 @@
 
     <main>
         <h1>Curso em video - Modulo 1</h1>
-        <h2>Paragrafos e quebras de linhas</h2>
+        <h2 class="titulo">Paragrafos e quebras de linhas</h2>
         <p>Para criar um paragrafo em HTML, basta escrever qualquer coisa dentro do par de 'tags' &lt;p&gt; Parabens! Voce criou um paragrafo.&lt;/p&gt;. <br> (Aqui contem duas quebra de linha) <br>
         Ja a quebra de linha br (Break row) é so colocar a tag &lt;br&gt; onde voce quiser quebrar a linha</p>
 
-        <h2>Imagens</h2>
+        <h2 class="titulo">Imagens</h2>
         <p>
             Existe 2 jeitos de por imagens com HTML <br>
             A primeira é com imagens internas, que ja estao baixadas no pc,
@@ -31,7 +31,7 @@
             <img src="https://th.bing.com/th/id/OIP.o-gU0VAeMrAADBjyKXrNXwHaE8?rs=1&pid=ImgDetMain" alt="Logo-JS">
         </div>
 
-        <h2>Hierarquia de titulos</h2>
+        <h2 class="titulo">Hierarquia de titulos</h2>
         <p>Para criar titulos em HTML podemos usar as tags &lt;h1&gt;...&lt;h6&gt;Aqui vai o titulo&lt;/h1&gt;...&lt;/h6&gt;</p>
         <h2>Simbolos especiais</h2>
         <p>Vamos adicionar alguns simbolos especiais:
@@ -51,7 +51,7 @@
             &rarr;
             &darr;
         </p>
-        <h2>Emojis</h2>
+        <h2 class="titulo">Emojis</h2>
         <p>Vamos adicionar alguns emojis:
             &#x1F40A;
             &#x1F47B;
@@ -65,7 +65,7 @@
             &#x1F913;
         </p>
         <p>Para criar um emoji basta colocar o codepoint do emoji depois de &#x(codepoint), terminando com ; (ponto e virgula).</p>
-        <h2>Semantica</h2>
+        <h2 class="titulo">Semantica</h2>
         <p><q>Semantica é o significado dos vocabulos, por oposição a suja forma</q></p>
         <h3>Tags morrem, voce sabia?</h3>
         <p>Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags &lt;font&gt; e &lt;center&gt;. E existem outras que simplesmente foram excluidas das versoes mais atuais da HTML5, como é o caso do &lt;applet&gt; e &lt;blink&gt;.</p>
@@ -112,7 +112,7 @@
         <h3>Texto Invertido</h3>
         <p>Para começo de conversa, BDO significa bi-directional-override. Ao usar a tag &lt;bdo&gt;, coloque um dos parametros: DIR para indicar uma das duas direções: rtl = direita para esquerda(right-to-left); ltr = esquerda para direita(left-to-right)</p>
         <p><bdo dir="rtl">Texto invertido</bdo></p>
-        <h2>Listas OL e UL</h2>
+        <h2 class="titulo">Listas OL e UL</h2>
         <p>Para criar um <abbr title="OL">Lista Ordenada</abbr>, vamos usar a tag &lt;ol&gt; e para delimitar a lista usa o &lt;li&gt;</p>
         <p>Mesma coisa para a <abbr title="UL">lista NÃo ordenada</abbr>, so que inves de usar &lt;ol&gt;, usamos &lt;ul&gt;.</p>
         <h3>Lista de Definições</h3>
@@ -126,7 +126,7 @@
             <dt>JavaScript</dt>
             Linguagem de programação para criar interatividades em sites.
         </dl>
-        <h2>Links</h2>
+        <h2 class="titulo">Links</h2>
         <p>Para criar um hyperlink, devemos criar ancoras atraves da tag &lt;a&gt;. O principal atributo dessa tag é o href, dentro desse atributo, usamos uma URL completa para o site. HREFLANG='pt-br'. TARGET = _blank, _self, _top, _parent e caso esteja usando frames usar o name do frame</p>
         <p>Esse link é seu ou dos outros? Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo REL. Esse atributo aceita varios valores, entre eles:</p>
         <dl>
@@ -141,6 +141,12 @@
             <dt>Nofollow</dt>
             <dd>Indica que é um link para um site não endosado, como um link pago.</dd>
         </dl>
+        <h2 class="titulo">Midia / Video</h2>
+        <p>Vamos aprender a reproduzir áudio em HTML5</p>
+        <audio src="../modulo-1/capitulo11/midia/AUD-20240819-WA0025.mp3" controls></audio>
     </main>
+    <footer>
+        <p>&copy;Gustavo Guanabara - Curso em Video</p>
+    </footer>
 </body>
 </html>
