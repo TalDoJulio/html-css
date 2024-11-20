@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('idroid.otf');
+}
+:root {
+    
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    background-color: #84E1AD;
+}
+main {
+    margin: 0px auto;
+    background-color: white;
+    min-width: 450px;
+    max-width: 800px;
+    padding: 4px 4px;
+    border: 1px solid #195A37;
+    box-shadow: 2px 2px 2px #195a378c;
+}
+
+p.paragrafo {
+    text-align: justify;
+
+}
+
+
+h2 {
+    font-family: 'Android';
+    background-image: linear-gradient(to right, #C5EBD6, white);
+}
+header {
+    background-image: linear-gradient(to bottom, #3BD27F, #195A37);
+}
+header > h1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+header > p {
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 10px 0px;
+}
+nav {
+    background-color: #195A37;
+}
+nav > a {
+    color: white;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+nav > a:hover {
+    text-decoration: underline;
+    background-color: #84E1AD;
+    color: #195A37;
+    padding: 6px 8px;
+    margin: 1px 1px;
+}
