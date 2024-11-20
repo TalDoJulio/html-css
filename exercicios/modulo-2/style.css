@@ -3,7 +3,12 @@
     font-family: 'Android';
     src: url('fontes/idroid.otf');
 }
+/* 
+    954px para altura 
+    516×1047 altu. e largu. minima
+*/
 :root {
+    --verde-fraco: #90EE90;
     --verde-forte: #195a37;
 }
 * {
@@ -11,8 +16,17 @@
 
     font-family: Arial, Helvetica, sans-serif;
 }
+body, html {
+    background-color: black;
+}
 header {
-    
+    background-image: linear-gradient(to bottom, #90EE90, var(--verde-forte));
+}
+main {
+    margin: 0px auto;
+    min-width: 492px;
+    max-width: 1200px;
+    background-color: white;
 }
 h1 {
     font-family: 'Android';
@@ -52,5 +66,17 @@ h3#caixa1 {
 
 
 footer {
-    background-color: lightgray;
+    background-color: var(--verde-forte);
+    text-align: center;
+    padding: 6px;
+    margin-top: 5px;
+}
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+footer > a:hover {
+    background-color: var(--verde-fraco);
+    color: var(--verde-forte);
+    padding: 6px;
 }
