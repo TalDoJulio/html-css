@@ -16,19 +16,259 @@
             <h1>Cores em CSS</h1>
             <p>Vamos comecar falando de cores</p>
         </section>
+
+
+
         <section>
             <h1>Alinhamentos de textos em CSS / Trabalhando com Fontes</h1>
-            <p>Depois vem alinhamentos</p>
+            <h2>Trabalhando com alinhamentos de textos em CSS</h2>
+            <pre>
+                <code>
+                    text-align: left; /* Vai alinhar a direita */
+                    text-align: right; /* Vai alinhar a esquerda */
+                    text-align: center; /* Vai alinhar no meio */
+                    text-align: justify; /* Faz o alinhamento nos 2 lados */
+                    text-indent: 20px; /* Quantos pixels de indentação */
+                </code>
+            </pre>
             <p style="text-align: justify;">Para falar de alinhamentos vou dar ctrl + c, v em um texto que ja vimos aqui. O ultimo paragrafo tera o alinhamento justificado. Para que voce perceba isso, terei que colocar um texto um pouco maior. Caso voce nao perceba que o alinhamento esta sendo feito nas duas laterais, tente diminuir um pouco o tamanho do seu navegador. Este tipo de alinhamento é bastante utilizado para textos longos e grandes parágrafos, para dar uma sensação de simetria, Agora eu já não sei o que escrever, mas vou continuar para que seu texto fique grande o suficiente para que voce possa ver o alinhamento justificado. Nunca pensei que seria tão dificil ficar escrevendo coisas sem sentido só pra que uma explicação faça um sentido minimo. Já chega, pra mim ja deu! Espero que voce tenha conseguido entender.</p>
             <p>Junto com alinhamentos. Fontes; Baixei a font Android para usar aqui, e usei umas fontes genericas importadas.</p>
         </section>
+
+
+
         <section>
             <h1>Seletores e Caixas</h1>
             <h2>Seletores</h2>
-            <h3>Classe</h3>
             <h3>Id</h3>
+            <p>Temos o "id", que é 'unico', podemos identificar um determinado elemento unico com um id.</p>
+            <h3>Classe</h3>
+            <p>E temos o "class", que é multiplo, podemos agrupar elementos multiplos que tenham caracteristicas semelhantes com um class.</p>
+            <h4>Pseudoclasses / Pseudo-elementos</h4>
+            <p>Aqui vai alguns Pseudo-classes:</p>
+            <ul>
+                <li>:hover</li>
+                <li>:visited</li>
+                <li>:active</li>
+                <li>:checked</li>
+                <li>:empty</li>
+                <li>:focus</li>
+            </ul>
+            <p>Pseudo-elementos:</p>
+            <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+            </ul>
+            <div id="seletores">
+                <h1>Personalizando um link</h1>
+                <p>Vamos começar criando um exemplo bem simples e bastante usado para exemplificar o uso de Pseudo-classes e Pseudo-elementos:</p>
+                <p><a href="https://www.w3c.br">Escritorio do W3C no Brasil</a></p>
+                <p>Site apenas para fins de aprendizado, todo conteudo foi retirado do nosso professor mais querido<a href="https://www.cursoemvideo.com/" class="especial">Gustavo Guanabara</a> do canal <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">Curso em Video</a> no YT</p>
+            </div>
+
+        </section>
+
+
+
+        <section id="caixa1">
+            <h1>Modelo de caixas</h1>
             <h2>Caixas</h2>
-            <h3 id="caixa1">Modelo de Caixas</h3>
+            <h3>O que é uma caixa?</h3>
+            <p>De forma simples e objetiva, baseado em um conceito chamado <q>box model</q>, a grande maioria dos elementos HTML que temos em nosso site são como caixas. Elas são containers que armazenam conteudos ou até mesmo outras caixas.</p>
+            <h3>Anatomia de uma caixa</h3>
+            <p>Por padrão toda caixa é composta apenas pelo conteúdo e não possui <q>padding</q>, nem <q>border</q>, <q>outline</q> e nem <q>margin</q>. Uma exceção curiosa é o elemento &lt;body&gt; que já vem com uma margin de 8px.</p>
+            <p>Todo conteudo possui uma <abbr title="width">largura</abbr> e uma <abbr title="height">altura</abbr> e a esse conjunto de propriedades, damos o nome de <q>box-size</q>(tamanho da caixa). O tamanho da caixa não inclui as medidas de <strong>padding</strong>, <strong>border</strong>, <strong>outline</strong> e <strong>margin</strong>.</p>
+            <p>Vamos criar um exemplo simples para exemplificar todos esses componentes, configurando as propriedades do modelo de caixa de um titulo H1.</p>
+            <h1 id="exemplo-caixa">Exemplo de caixa</h1>
+        </section>
+
+
+
+        <section>
+            <h1>Tipos de caixas</h1>
+            <h2>Caixa do tipo block-level</h2>
+            <p>Uma elemento dito block-level sempre vai ser iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nehuma outra caixa, ele vai ocupar 100% largura do &lt;body&gt;.</p>
+            <p>O elemento block-level mais conhecido é o &lt;div&gt; e suas variações semânticas modernas da HTML5, como &lt;main&gt;, &lt;section&gt;, &lt;aside&gt;, etc...</p>
+            <p>Aqui vai uma lista com alguns elementos HTML que são block-level: </p>
+            <ul>
+                <li>&lt;address&gt;</li> <!-- Inicio da coluna -->
+                <li>&lt;div&gt;</li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;main&gt;</li>
+                <li>&lt;section&gt;</li>
+                <li>&lt;article&gt;</li>
+                <li>&lt;dl&gt;</li>
+                <li>&lt;form&gt;</li>
+                <li>&lt;nav&gt;</li>
+                <li>&lt;table&gt;</li>
+                <li>&lt;aside&gt;</li> <!-- Nova coluna -->
+                <li>&lt;dt&gt;</li>
+                <li>&lt;h1-h6&gt;</li>
+                <li>&lt;noscript&gt;</li>
+                <li>&lt;tfoot&gt;</li>
+                <li>&lt;blockquote&gt;</li>
+                <li>&lt;fieldset&gt;</li>
+                <li>&lt;header&gt;</li>
+                <li>&lt;ol&gt;</li>
+                <li>&lt;ul&gt;</li>
+                <li>&lt;canvas&gt;</li> <!-- Ultima coluna -->
+                <li>&lt;figcaption&gt;</li>
+                <li>&lt;hr&gt;</li>
+                <li>&lt;p&gt;</li>
+                <li>&lt;video&gt;</li>
+                <li>&lt;dd&gt;</li>
+                <li>&lt;figure&gt;</li>
+                <li>&lt;li&gt;</li>
+                <li>&lt;pre&gt;</li>
+            </ul>
+            <h2>Caixa do tipo inline-level</h2>
+            <p>Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto exatoonde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteudo.</p>
+            <p>Aqui vai uma lista com alguns elementos inline-level usados pela HTML:</p>
+            <ul>
+                <li>&lt;a&gt;</li> <!-- Primeira coluna -->
+                <li>&lt;buttom&gt;</li>
+                <li>&lt;img&gt;</li>
+                <li>&lt;output&gt;</li>
+                <li>&lt;span&gt;</li>
+                <li>&lt;abbr&gt;</li>
+                <li>&lt;cite&gt;</li>
+                <li>&lt;input&gt;</li>
+                <li>&lt;q&gt;</li>
+                <li>&lt;strong&gt;</li>
+                <li>&lt;acronym&gt;</li> <!-- Nova Coluna -->
+                <li>&lt;code&gt;</li>
+                <li>&lt;kbd&gt;</li>
+                <li>&lt;samp&gt;</li>
+                <li>&lt;sub&gt;</li>
+                <li>&lt;b&gt;</li>
+                <li>&lt;dfn&gt;</li>
+                <li>&lt;label&gt;</li>
+                <li>&lt;script&gt;</li>
+                <li>&lt;textarea&gt;</li>
+                <li>&lt;bdo&gt;</li> <!-- Ultima coluna -->
+                <li>&lt;em&gt;</li>
+                <li>&lt;map&gt;</li>
+                <li>&lt;select&gt;</li>
+                <li>&lt;tt&gt;</li>
+                <li>&lt;br&gt;</li>
+                <li>&lt;object&gt;</li>
+                <li>&lt;small&gt;</li>
+                <li>&lt;var&gt;</li>
+            </ul>
+        </section>
+
+
+
+        <section>
+            <h1>Grouping tags em HTML5</h1>
+            <h2>&lt;header&gt;</h2>
+            <p>Cria areas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma &lt;section&gt; ou &lt;article&gt;. Normalmente inclui titulos &lt;h1...h6&gt; e subtitulos. Podem tambem conter menus de navegações.</p>
+            <h2>&lt;nav&gt;</h2>
+            <p>Define uma area que possui os links de navegação pela estrutura de paginas que vão compor o website. Um &lt;nav&gt; pode estar dentro de um &lt;header&gt;.</p>
+            <h2>&lt;main&gt;</h2>
+            <p>É um agrupador usado para delimitar o conteudo principal do nosso site. Normalmente concentra as &lt;section&gt;, &lt;article&gt; e &lt;aside(conteudo periferico)&gt;</p>
+            <h2>&lt;section&gt;</h2>
+            <p>Cria seções para sua pagina. Ela pode conter o conteudo diretamente no seu corpo ou dividir os conceitos em artigos com conteudos perifericos. Segundo a documentação oficial da W3C, <q>Uma seção é um agrupa,ento tematico de conteudos, tipicamente com um cabeçalho</q>.</p>
+            <h2>&lt;article&gt;</h2>
+            <p>Um artigo é um elemento que vai conter um conteudo que pode ser lido de forma independente e dizem respeito a um mesmo assunto.</p>
+            <h2>&lt;aside&gt;</h2>
+            <p>Delimita um conteudo periferico e complementar ao conteudo principal de um artigo ou seção. Normalmente um conteudo &lt;aside&gt; está posicionado ao lado de um determinado texto ou ate mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente falando sobre <q>Multiplos Niveis</q>.</p>
+            <p>A sua criatividade e planejamento vai definir a estrutura do seu site. Sendo assim, é possivel ter um ou mais &lt;article&gt; dentro de uma &lt;section&gt; ou ate mesmo criar &lt;section&gt; dentro de um &lt;article&gt;. Não existem limitações quanto a isso.</p>
+            <h2>&lt;footer&gt;</h2>
+            <p>Cria um rodape para o site inteiro, seção ou artigo. É um conteudo que não faz parte diretamente do conteudo, nem é um conteudo periferico(o que caracterizaria um &lt;aside&gt;), mas possui informações sobre autoria do conteudo, links adicionais, mapa do site, documentos relacionados.</p>
+            <p>A seguir vem uma proposta de estrutura para um projeto de site.</p>
+            <pre>
+                <code>
+                    &lt;header&gt;
+                    |   &lt;h1&gt;Meu site&lt;/h1&gt;
+                    |   &lt;nav&gt;link link link&lt;/nav&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                    |   &lt;section&gt;
+                    |   |    &lt;article&gt;
+                    |   |    |    &lt;h2&gt;Titulo&lt;/h2&gt;
+                    |   |    |    &lt;p&gt;Texto do artigo&lt;/p&gt;
+                    |   |    &lt;/article&gt;
+                    |   |    &lt;article&gt;
+                    |   |    |   &lt;h2&gt;Titulo&lt;/h2&gt;
+                    |   |    |   &lt;p&gt;Texto do artigo&lt;/p&gt;
+                    |   |    |   &lt;aside&gt;
+                    |   |    |       conteudo periferico do artigo
+                    |   |    |   &lt;/aside&gt;
+                    |   |    &lt;/article&gt;
+                    |   &lt;/section&gt;
+                    |   &lt;aside&gt;
+                    |   |    Conteudo periferico do main
+                    |   &lt;/aside&gt;
+                    &lt;/main&gt;
+                    &lt;footer&gt;
+                    |   Conteudo do rodape
+                    &lt;/footer&gt;
+                </code>
+            </pre>
+        </section>
+
+
+
+        <section>
+            <h1>Sombras</h1>
+            <h2>Sombras em caixas</h2>
+            <p>As sombras são muito uteis para dar volumes, para dar a sensação de que as caixas estão ali realmente.</p>
+            <h2>Sombras em textos</h2>
+        </section>
+
+
+
+        <section>
+            <h1>Variaveis em CSS</h1>
+            <p>Com essa dica, voce vai levar suas folhas de estilo a um outro nivel! Vamos aprender a utilizar variaveis personalizadas com CSS para cadastrar os esquemas de cores e fontes do nosso site.</p>
+            <p>Para criarmos variaveis para nossas configurações, devemos definir uma area de definições dentro do estilo para uma pseudo-classe chamada <q>:root</q>, que definem as configurações para a raiz de uma árvore, que vai servir para o documento inteiro.</p>
+            <pre>
+                <code>
+                    :root {
+                        --cor0: #c5ebd6;
+                        --cor1: #83e1ad;
+                        --cor2: #3ddc84;
+                        --cor3: #2fa866;
+                        --cor4: #1a5c37;
+                        --cor5: #063d1e;
+                        --fonte0: Arial, Helvetica, sans-serif;
+                        --fonte1: 'Bebas Neve', cursive;
+                        --fonte2: 'Android', sans-serif;
+                    }
+                </code>
+            </pre>
+            <p>A partir de agora, definir cores e fontes em nossos elementos HTML ficara extremamente mais facil e personalizavel, utilizando a função var().</p>
+            <pre>
+                <code>
+                    body {
+                        font-family: var(--fonte0);
+                        color: var(--cor0);
+                        background-color: var(--cor1);
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h1>Responsividade</h1>
+            <p>Um site dito responsivo vai ser capaz de adaptar os tamanhos dos seus componentes para mantes o site plenamente visivel em qualquer tela.</p>
+            <p>Para que nosso site se adapte mais facilmente ao tamanho da tecla, uma das tecnicas básicas que podem ser utilizadas é deixar algumas caixas estrategicamente um pouco mais flexiveis indicando valores minimos (min-width / min-height) e maximas (max-width / max-height).</p>
+            <pre>
+                <code>
+                    &lt;h1&gt;Exemplo&lt;/h1&gt;
+                    &lt;style&gt;
+                        h1 {
+                            min-width: 400px;
+                            max-width: 800px
+                        }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+            <p>A configuração acima vai garantir que a caixa em questão não fique com largura menor que 400px(Telas pequenas) e nem seja maior que 800px(Telas grandes).</p>
+        </section>
     </main>
     <footer>
         <a href="desafios/android.html" target="_blank">Projeto Android</a>
