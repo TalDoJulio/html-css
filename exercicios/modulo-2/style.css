@@ -13,21 +13,37 @@
 }
 * {
     margin: 0px;
-
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 body, html {
     background-color: black;
 }
+
+
 header {
     background-image: linear-gradient(to bottom, #90EE90, var(--verde-forte));
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
+header > p {
+    text-align: left;
+}
+
+
 main {
-    margin: 0px auto;
+    margin: 8px auto;
+    padding: 5px;
     min-width: 492px;
     max-width: 1200px;
     background-color: white;
+    border-radius: 8px;
 }
+section#cont-cores {
+    background-color: lightgray;
+}
+
 h1 {
     font-family: 'Android';
 }
