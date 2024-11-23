@@ -217,6 +217,17 @@
             <h2>Sombras em caixas</h2>
             <p>As sombras são muito uteis para dar volumes, para dar a sensação de que as caixas estão ali realmente.</p>
             <h2>Sombras em textos</h2>
+            <p>Anteriormente falamos sobre sombras em caixas, utilizando a propriedade <q>box-shadow</q>. Pois saiba que tambem existe uma propriedade para criar sombras em textos: text-shadow</p>
+            <p>A propriedade <q>text-shadow</q> tambem pode ter 4 parâmetros principais: </p>
+            <dt>1 - Deslocamento horizontal (h-offset):</dt>
+            <dd>Quanto a sombra vai andar para o lado direito (valores negativos sombra vai andar para esquerda).</dd>
+            <dt>2 - Deslocamento vertical (v-offset):</dt>
+            <dd>Quanto a sombra vai andar para baixo (valores negativos sombra vai andar para cima).</dd>
+            <dt>3 - Embaçamento (blur):</dt>
+            <dd>Quanto a sombra vai se espalhar pelo fundo.</dd>
+            <dt>4 - Cor (color):</dt>
+            <dd>É possivel usar transparencia</dd>
+            <p>text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.400);</p>
         </section>
 
 
@@ -262,12 +273,100 @@
                     &lt;style&gt;
                         h1 {
                             min-width: 400px;
-                            max-width: 800px
+                            max-width: 800px;
                         }
                     &lt;/style&gt;
                 </code>
             </pre>
             <p>A configuração acima vai garantir que a caixa em questão não fique com largura menor que 400px(Telas pequenas) e nem seja maior que 800px(Telas grandes).</p>
+        </section>
+
+
+
+        <section>
+            <h1>Espaçamento entrelinhas em textos</h1>
+            <p>Outra configuração muito importante que podemos fazer textos muito longos é o espaçamento entre as linhas do nosso texto. Usando a propriedade <q>line-height</q> podemos dizer qual é o tamanho do espaço entre uma linha e a outra do texto. O valor padrao na maioria dos navegadores é algo proximo ao 1.2em.</p>
+            <pre>
+                <code>
+                    &lt;style&gt;
+                        h1 {
+                            line-height: 1.2em;
+                            line-height: 1.5em;
+                            line-height: 2em;
+                        }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+        </section>
+
+
+
+        <section>
+            <h1>Personalizando ainda mais as listas</h1>
+            <p>Nesse exemplo configurar as listas em 2 colunas e modificar o marcador  para personalizar ainda mais a exibição do conteudo.</p>
+            <p>Exemplo: </p>
+            <pre>
+                <code>
+1                   &lt;style&gt;
+2                       ul {
+3                           list-style-type: '\2714\0020\0020';
+4                           columns: 2;
+5                           list-style-position: inside;
+6                       }
+7                   &lt;/style&gt;
+                </code>
+            </pre>
+            <p>A primeira linha (linha 3) de declaração faz com que o marcador seja personalizado com o parâmetro <q>list-style-type</q>. O valor <strong>\2714</strong> corresponde ao simbolo de certo, que tem o codigo unicode <strong>U+2714</strong>(confira a emojipedia). O valor <strong>\0020</strong> corresponde a um espaço em branco (tambem pode ser <strong>\00A0</strong>).</p>
+            <p>A segunda declaração vai organizar a lista em 2 colunas.</p>
+            <p>Por fim, a ultima declaração vai fazer com que os marcadores seja exibidos na parte interna da caixa que contém a lista. Analise as imagens abaixo e perceba que, por padrão, a caixa de uma lista não inclui os marcadores. Alteramos essa caracteristica usando a declaração <q>list-style-position</q> com o valor <q>inside</q>, já que a lista vai estar dentro de um &lt;aside&gt; no nosso documento HTML.</p>
+            <p>Temos os atributos <strong>outside</strong> ou a tag de agrupamento que a lista esta dentro</p>
+        </section>
+
+
+
+        <section>
+            <h1>Videos do YouTube mais flexiveis</h1>
+            <p>Aprendemos no <strong>Capitulo 11</strong> como deixar as imagens mais <q>flexiveis</q> usando a tag &lt;picture&gt;. Tambem aprendemos a adicionar videos usando varias tecnicas, inclusive aqueles que estão hospedados em serviços especialmente como Vimeo e YouTube.</p>
+            <p>O problema é que, quando incorporamoes um video do YouTube ou Vimeo, isso é feito atraves de uma tag &lt;iframe&gt; que já vem com as configurações de um tamanho fixo e precisamos alterar isso para que nossa interface possa se tornar mais responsiva e adaptar o tamanho do video dinamicamente, principalmente para tags pequenas.</p>
+            <p>Para isso, vamos colocar o &lt;iframe&gt; de incorporação dentro de uma &lt;div&gt; para que o video esteja limitado dentro de um container.</p>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title>Gustavo Guanabara&lt;/title&gt;
+                        &lt;style&gt;
+                            div.video {
+                                position: relative;
+                                background-color: black;
+                                height: 0px;
+                                margin-left: -20px;
+                                margin-right: -20px;
+                                margin-bottom: 15px;
+                                padding-bottom: 59%;
+                            }
+                            div.video > iframe {
+                                position: absolute;
+                                top: 5%;
+                                left: 5%;
+                                width; 90%;
+                                height: 90%;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="video"&gt;
+                            Aqui vai o <strong>&lt;iframe&gt;</strong>
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <p>O que nos importa mais aqui é entender o funcionamento da propriedade <strong>position</strong>, que é a unica que não vimos até aqui. O valor padrão para essa propriedade de posicionamento é <strong>static</strong>, que matem a hierarquia conforme estabelecido no documento HTML.</p>
+            <p>Na <strong>div</strong>, nos colocamos o valor como <strong>relative</strong>para que seja considerado o posicionamento atual do elemento de divisão e que ele se mantenha adaptável para o caso de alteração no tamanho do navegador.</p>
+            <p>Já dentro do &lt;iframe&gt;, nos usamos o posicionamento <strong>absolute</strong> para que a <strong>div</strong>(que é o seu container) torna-se o ponto de partida para o posicionamento do frame. A partir dai, podemos utilizar propriedades para configurar o deslocamento a esquerda, ao topo, e seu tamanho e altura, todos em porcentagem de tela.</p>
         </section>
     </main>
     <footer>
