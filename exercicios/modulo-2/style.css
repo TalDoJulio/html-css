@@ -18,7 +18,7 @@
     --cor-fundo: #645e8038;
     --cor-letra: #843A00;
     --degrade-roxo: #5F3DFF;
-    --degrade-claro: #FFE5D1
+    --degrade-claro: #FFE5D1;
 }
 .roboto-mono {
     font-family: "Roboto Mono", monospace;
@@ -34,4 +34,12 @@
 header {
     background-image: linear-gradient(to bottom, var(--degrade-claro), var(--degrade-roxo));
 }
-nav
+header > h1 {
+    padding-top: 16px;
+}
+nav {
+    background-color: #5F3DFF;
+}
+nav > a {
+    color: black;
+}
