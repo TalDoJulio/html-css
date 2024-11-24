@@ -26,22 +26,44 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    font-size: 1.5vw;
 }
 header > p {
     text-align: left;
 }
+nav {
+    background-color: var(--verde-forte);
+    padding: 4px 8px;
+}
+nav > a {
+    color: var(--verde-fraco);
+    font-size: 1.5vw;
+}
+nav > a:hover {
+    background-color: var(--verde-fraco);
+    color: var(--verde-forte);
+    padding: 6px;
+}
+h2.titulo-exemplo {
+    font-size: 1.5vw;
+}
+
+
+
+
 
 
 main {
     margin: 8px auto;
-    padding: 5px;
+    padding: 4px;
     min-width: 492px;
-    max-width: 1200px;
+    max-width: 1400px;
     background-color: white;
     border-radius: 8px;
 }
 section#cont-cores {
     background-color: lightgray;
+    font-size: 1.8vw;
 }
 
 h1 {
@@ -74,10 +96,9 @@ h1#exemplo-caixa {
     margin: 0px auto;
     background-color: lightgreen;
     color: var(--verde-forte);
-
-    width: 500px;
+    min-width: 492px;
+    max-width: 600px;
     height: 600px;
-
 }
 
 
