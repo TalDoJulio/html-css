@@ -4,155 +4,34 @@
     src: url('fontes/idroid.otf');
 }
 /* 
-    954px para altura 
+    954px para altura
     516×1047 altu. e largu. minima
+    proporção da tela
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); /* Fonte 'Roboto Mono' do google fonts*/
 :root {
     --verde-fraco: #90EE90;
+    --verde-fraco-secundaria: #03FF00;
     --verde-forte: #195a37;
+    --verde-forte-secundaria: #18AD17;
+    --cor-fundo: #645e8038;
+    --cor-letra: #843A00;
+    --degrade-roxo: #5F3DFF;
+    --degrade-claro: #FFE5D1
 }
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
 * {
     margin: 0px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
-body, html {
-    background-color: black;
-}
-
-
 header {
-    background-image: linear-gradient(to bottom, #90EE90, var(--verde-forte));
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 1.5vw;
+    background-image: linear-gradient(to bottom, var(--degrade-claro), var(--degrade-roxo));
 }
-header > p {
-    text-align: left;
-}
-nav {
-    background-color: var(--verde-forte);
-    padding: 4px 8px;
-}
-nav > a {
-    color: var(--verde-fraco);
-    font-size: 1.5vw;
-}
-nav > a:hover {
-    background-color: var(--verde-fraco);
-    color: var(--verde-forte);
-    padding: 6px;
-}
-h2.titulo-exemplo {
-    font-size: 1.5vw;
-}
-
-
-
-
-
-
-main {
-    margin: 8px auto;
-    padding: 4px;
-    min-width: 492px;
-    max-width: 1400px;
-    background-color: white;
-    border-radius: 8px;
-}
-section#cont-cores {
-    background-color: lightgray;
-    font-size: 1.8vw;
-}
-
-h1 {
-    font-family: 'Android';
-}
-
-
-ul {
-    list-style-type: '\2714\0020\0020';
-    columns: 2;
-    list-style-position: inside;
-}
-
-
-
-h1#exemplo-caixa {
-    width: 300px;
-    height: 50px;
-    background-color: lightgray;
-    border: 10px solid red;
-    padding: 20px;
-    outline: 30px solid blue;
-    margin: 50px auto;
-    text-align: center;
-}
-
-
-
-#caixa1 {
-    margin: 0px auto;
-    background-color: lightgreen;
-    color: var(--verde-forte);
-    min-width: 492px;
-    max-width: 600px;
-    height: 600px;
-}
-
-
-
-
-
-
-
-div#seletores {
-    background-color: lightgray;
-}
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: red;
-}
-a:visited {
-    color: darkred;
-}
-a:hover {
-    text-decoration: underline;
-}
-a.especial:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-}
-a.especial::before {
-    content: 'Aqui é o que vai aparecer antes - ';
-    font-weight: lighter;
-}
-a.especial::after {
-    content: ' - Aqui é o que vai aparecer depois';
-    font-weight: lighter;
-}
-
-
-
-
-
-
-
-footer {
-    background-color: var(--verde-forte);
-    text-align: center;
-    padding: 6px;
-    margin-top: 5px;
-}
-footer > a {
-    text-decoration: none;
-    color: white;
-}
-footer > a:hover {
-    background-color: var(--verde-fraco);
-    color: var(--verde-forte);
-    padding: 6px;
-}
+nav
