@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralizar caixas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1, p {
+            text-align: center;
+        }
+        img#display-block {
+            display: block;
+            height: 250px;
+            margin: 0px auto;
+        }
+        img#position-absolute {
+            position: absolute;
+            height: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 <body>
-    <h1>Como centralizar uma DIV ou qualquer coisa no CSS</h1>
+    <h1>Centralizando</h1>
+    <p>Como centralizar uma div ou qualquer coisa com CSS</p>
+    <img src="conteudos/beautiful.jpeg" alt="ihury" id="displau-block">
+    <p>Todas as imagens tem como <q>display: inline</q>, temos que usar o <q>display</q>: block</p>
+
+    <p>Agora vamos centralizar uma outra imagem na vertical e outra na horizontal de jeitos diferentes.</p>
+    <p>Para mudar a primeira imagem vamos usar o <strong>position</strong> para <strong>absolute</strong>, ou seja, nos mesmo vamos dar o posicionamento que queremos para a imagem.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <img src="conteudos/frame-iphone.png" alt="teste de posicionamento" id="position-absolute">
+    <p>Como vimos, se usarmos apenas o <strong>top: 50%</strong> a imagem vai ficar centralizada abaixo da linha desejada, que seria no meio a esquerda. Para resolver isso, temos o <strong>transform</strong> com os valores <strong>translateX(horizontal)</strong> e <strong>translateY(vertical)</strong></p>
+
+
+    
 </body>
 </html>
