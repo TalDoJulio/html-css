@@ -8,14 +8,13 @@
         body {
             background-color: black;
         }
-        div#iflex {
+        div#container {
 
             background-color: white;
 
 
 
             display: flex;
-            flex-direction: column;
         }
         div.item {
             background-color: chocolate;
@@ -26,18 +25,61 @@
 
             flex: auto;
         }
+        div#irow {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+        }
+
+        div#irow-reverse {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <h1>CSS Flexible Box Module</h1>
-    <p>Na aula anterios nos falamos sobre o container(pai), o <q>pai</q> é quem leva a configuração <q>display: flex;</q></p>
+    <p>Na aula anterios nos falamos sobre o container(pai), o <q>pai</q> é quem leva a configuração <q>display: flex;</q>, temos que destacar quem é o container pai, pois é ele que vai conter todos os itens</p>
     <div id="container">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
         <div class="item">D</div>
     </div>
+    <p>Agora iremos falar sobre <strong>Direções / Eixos</strong></p>
+    <p>Vamos comecar com a configuração de direção, essa configuração é usada somente no container / pai, e existe 4 valores para essa configuração, sendo elas, flex-direction: row;row-reverse; column; column-reverse;</p>
+    <p>Quando escolhemos a direção, sao criador 2 coisas importantes. Os Eixos: main-axis:main-start:main-end; cross-axis:cross-start:cross-end;</p>
 
+
+    <div id="irow">
+        <div class="citem">A</div>
+        <div class="citem">B</div>
+        <div class="citem">C</div>
+        <div class="citem">D</div>
+        <div class="citem">E</div>
+    </div>
+
+    <div id="irow-reverse">
+        <div class="citem">A</div>
+        <div class="citem">B</div>
+        <div class="citem">C</div>
+        <div class="citem">D</div>
+        <div class="citem">E</div>
+    </div>
+    
+    <div id="icolumn">
+        <div class="citem">A</div>
+        <div class="citem">B</div>
+        <div class="citem">C</div>
+        <div class="citem">D</div>
+        <div class="citem">E</div>
+    </div>
+
+    <div id="icolumn-reverse">
+        <div class="citem">A</div>
+        <div class="citem">B</div>
+        <div class="citem">C</div>
+        <div class="citem">D</div>
+        <div class="citem">E</div>
+    </div>
 
 </body>
 </html>
