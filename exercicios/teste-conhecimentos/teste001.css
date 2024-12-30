@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -6,22 +7,42 @@
 }
 body {
     background-color: #F4F0EA;
+    color: #00E5FC;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
 }
 header {
     background-color: #2222FF;
     color: #00E5FC;
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
-header > h1 {
+header h1 {
     font-size: 3rem;
 }
-
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+main p {
+    text-align: center;
+}
 main h2 {
     color: #331F19;
 }
-form {
-    
+section {
+    background-color: #2222FF;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    border-radius: 50px;
 }
 
 
@@ -29,7 +50,21 @@ form {
 
 
 
-
+details {
+    padding: 1rem;
+}
+summary {
+    color: #331F19;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+ol {
+    margin-left: 1.5rem;
+}
+ol li {
+    padding: 0.2rem;
+}
 
 
 
@@ -40,8 +75,14 @@ footer {
     text-align: center;
     color: #00E5FC;
 }
-footer a {
+a {
     text-decoration: none;
     color: #00E5FC;
-    font-weight: bolder;
+    font-weight: 900;
 } 
+a:hover {
+    text-decoration: underline;
+    color: #F4F0EA;
+    font-weight: 900;
+    background-color: #f4f0ea42;
+}
