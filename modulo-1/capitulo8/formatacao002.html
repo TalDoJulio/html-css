@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formatações pt.2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+        }
+        header {
+            background-color: oklch(95.1% 0.026 236.824);
+            color: oklch(28.2% 0.091 267.935);
+            text-align: center;
+            padding: 15px;
+        }
+        main {
+            background-color: white;
+            width: 800px;
+            padding: 5px;
+            margin: 5px auto;
+            box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.815);
+        }
+        section {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 1px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Formatações adicionais em HTML</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Marca texto</h2>
+            <p>O elemento HTML <b>&lt;mark&gt;</b> define o texto que deve ser marcado ou destacado:</p>
+            <p>Podemos criar tambem um <mark>texto marcado</mark> usando a tag <b>&lt;mark&gt;</b></p>
+            <p>Podemos usar a CSS para mudar a cor do marca texto</p>
+        </section>
+
+
+        <section>
+            <h2>Texto pequeno</h2>
+            <p>O elemento HTML <b>&lt;small&gt;</b> define texto menor:</p>
+            <p>Estamos criando um <small>texto pequeno</small> nesse paragrafo</p>
+        </section>
+        <section>
+            <h2>Texto Deletado / Inserido</h2>
+            <h3>Texto deletado</h3>
+            <p>O elemento HTML <b>&lt;del&gt;</b> define o texto que foi excluido de um documento. Os navegadores geralmente riscam o texto excluido:</p>
+            <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+            <h3>Texto inserido</h3>
+            <p>O elemento HTML <b>&lt;ins&gt;</b> define um texto que foi inserido em um documento. Os navegadores geralmente sublinham o texto inserido:</p>
+            <p>Podemos marcar <ins>um texto como inserido</ins> para dar um enfase e indicar que ele foi adicionado depois.</p>
+        </section>
+
+        <section>
+            <h2>Texto Sobrescrito / Subscrito</h2>
+            <h3>Texto sobrescrito</h3>
+            <p>O elemento HTML <b>&lt;sup&gt;</b> define texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e, s vezes, é renderizado em uma fonte menor. O texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup>:</p>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+            <h3>Texto subscrito</h3>
+            <p>O elemento HTML <b>&lt;sub&gt;</b> define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, as vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para formulas quimicas, como <sub>H2O</sub>:</p>
+            <P>Para inserir coisas do tipo H<sub>2</sub>O</P>
+        </section>
+    </main>
 </body>
 </html>
