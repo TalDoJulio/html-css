@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+        abbr {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Citações</h1>
+        <p>Neste capítulo, veremos os elementos <b>&lt;blockquote&gt;</b>, <b>&lt;q&gt;</b>, <b>&lt;abbr&gt;</b>, <b>&lt;address&gt;</b>, <b>&lt;cite&gt;</b>, e <b>&lt;bdo&gt;</b>.</p>
+    </header>
+    <main>
+        <h1>Elementos de citações HTML</h1>
+
+        <h2>Citações simples</h2>
+        <p>A tag HTML <b>&lt;q&gt;</b> define uma citação curta.</p>
+        <p>Os navegadores normalmente inserem aspas ao redor da citação:</p>
+        <p>Como diria o Gustavo Guanabara: <q>O computador é um burro muito rápido.</q></p>
+        <p>O objetivo do WWF's é <q>construir um futuro onde as pessoas vivam em harmonia com a natureza</q>.</p>
+
+        <h2>Citações completas</h2>
+        <h3>HTML <strong>&lt;blockquote></strong> para citações</h3>
+        <p>Segundo Gustavo Guanabara, no seu curso de HTML e CSS: </p>
+        <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">
+            Uma blockQuote serve para fazer uma citação/referência a algo, uma citação de bloco, uma citação mais longa. <br>
+            Esta frase é referente ao link da tag cite.
+        </blockquote>
+        <p>O elemento HTML <b>&lt;blockquote&gt;</b> define uma seção que é citada de outra fonte.</p>
+        <p>Os navegadores geralmente recuam elementos <b>&lt;blockquote&gt;</b>.</p>
+        <h3>HTML <strong>&lt;cite></strong> para titulo do trabalho</h3>
+        <p>A tag HTML <strong>&lt;cite&gt;</strong> define o titulo de um trabalho criativo (<strong>Exemplo:</strong> um livro, um poema, uma musica, um filme, uma pintura, uma escultura, etc.)</p>
+
+        <h2>Abreviações - Siglas</h2>
+        <h3>HTML <strong>&lt;abbr&gt;</strong> para abreviações</h3>
+        <p>A tag HTML <b>&lt;abbr&gt;</b> define uma abreviação ou um acrônimo, como: <abbr title="HyperText Markup Language"><strong><q>HTML</q></strong></abbr>, <abbr title="Cascading Style Sheets"><strong><q>CSS</q></strong></abbr>, <abbr title="JavaScript"><strong><q>JS</q></strong></abbr>, <abbr title="As soon as possible"><strong><q>ASAP</q></strong></abbr>, <abbr title="Articulação TemporoMandibular"><strong><q>ATM</q></strong></abbr>.</p>
+        <p>Marcar abreviações pode fornecer informações úteis para navegadores, sistemas de tradução e mecanismo de busca.</p>
+        <p><strong>DICA:</strong> Use o atributo global <mark>title</mark> para mostrar a descrição da abreviação/sigla quando você passar o mouse sobre o elemento.</p>
+        <div>
+            <h4>Exemplo:</h4>
+            <pre><code>
+                &lt;p&gt;A &lt;abbr title="World Healt Organization">WHO&lt;/abbr>foi fundada em 1948.&lt;/p>
+                </code>
+            </pre>
+        </div>
+
+        <h2>Texto invertido</h2>
+        <h3>HTML <strong>&lt;bdo> para substituição bidirecional</strong></h3>
+        <p>BDO significa Substituição Bidirecional.</p>
+        <p>A tag HTML <strong>&lt;bdo></strong>é usada para substituir a direção atual do texto:</p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo> <br>
+        <bdo dir="rtl">Este texto sera escrito da direita para esquerda.</bdo>
+    </main>
+
+</body>
+</html>
