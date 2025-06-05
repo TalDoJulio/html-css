@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com iframes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body, html {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #menu {
+            margin: 3px 0px 1px 25px;
+            padding: 2px;
+            background-color: lightcyan;
+            width: 20%;
+            border-radius: 2px;
+        }
+
+        #tela {
+            background-color: lightgray;
+            margin: 3px 25px 2px 0px;
+            width: 650px;
+
+        }
+
+
+        header {
+            background-color: white;
+        }
+        header > h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: white;
+
+            text-align: center;
+            font-size: 1.5em;
+
+            width: 100vw;
+            height: 28px;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reprodutor de midia com iframes</h1>
+    </header>
+
+    <section id="menu">
+        <ol start="none">
+            <li><a href="midia/AUD-20240819-WA0021.mp3" target="frame">msc 1 &#x2714</a> Progresso</li>
+            <li><a href="midia/AUD-20240819-WA0022.mp3" target="frame">msc 2 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0023.mp3" target="frame">msc 3 &#x2714</a> Tipo Neymar</li>
+            <li><a href="midia/AUD-20240819-WA0024.mp3" target="frame">msc 4 &#x2714</a> La Bella Mafia</li>
+            <li><a href="midia/AUD-20240819-WA0025.mp3" target="frame">msc 5 &#x2714</a> Vida louca</li>
+            <li><a href="midia/AUD-20240819-WA0026.mp3" target="frame">msc 6 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0027.mp3" target="frame">msc 7 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0028.mp3" target="frame">msc 8 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0029.mp3" target="frame">msc 9 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0030.mp3" target="frame">msc 10 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0031.mp3" target="frame">msc 11 &#x2714</a> Tijolo por tijolo</li>
+            <li><a href="midia/AUD-20240819-WA0032.m4a" target="frame">msc 12</a></li>
+            <li><a href="midia/AUD-20240819-WA0033.m4a" target="frame">msc 13</a></li>
+            <li><a href="midia/AUD-20240819-WA0034.m4a" target="frame">msc 14</a></li>
+            <li><a href="midia/AUD-20240819-WA0035.m4a" target="frame">msc 15</a></li>
+            <li><a href="midia/AUD-20240819-WA0036.mp3" target="frame">msc 16 &#x2714</a></li>
+            <li><a href="midia/AUD-20240819-WA0037.m4a" target="frame">msc 17</a></li>
+            <li><a href="midia/AUD-20240819-WA0038.m4a" target="frame">msc 18</a></li>
+            <li><a href="midia/AUD-20240819-WA0039.m4a" target="frame">msc 19</a></li>
+            <li><a href="midia/AUD-20240819-WA0040.m4a" target="frame">msc 20</a></li>
+            <li><a href="midia/AUD-20240819-WA0041.m4a" target="frame">msc 21</a></li>
+            <li><a href="midia/AUD-20240819-WA0042.m4a" target="frame">msc 22</a></li>
+        </ol>
+    </section>
+
+    <main id="tela">
+        <p>os links com &#x2714 sao os que contem musicas</p>
+        <iframe name="frame" srcdoc="Escolha a musica" referrerpolicy="no-referrer">
+        </iframe>
+    </main>
+
+    <footer>
+        <p><a href="https://www.instagram.com/dias_ihury?igsh=MXRiM2RqeWM2ajJxMA==" target="_blank">Ihury beautiful</a></p>
+    </footer>
+</body>
+</html>
