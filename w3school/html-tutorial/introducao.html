@@ -6,9 +6,14 @@
     <title>Introdução ao HTML</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Introdução ao HTML</h1>
         <p>HTML é a linguagem de marcação padrão para criar páginas da web.</p>
+        <nav>
+            <a href="basico.html">Proxima Pagina</a>
+        </nav>
+    </header>
+    <main>
         <!-- O que é HTML? -->
         <section>
             <h2>O que é HTML?</h2>
@@ -21,10 +26,12 @@
                 Os elementos HTML rotulam partes de conteúdo como <q>&lt;h1&gt;Este é um titulo&lt;/h1&gt;</q>, <q>&lt;p&gt;Este é um paragrafo&lt;/p&gt;</q>, <q>&lt;a href="url do link"&gt;Este é um link&lt;a&gt;</q>, etc...
             </p>
         </section>
+        <hr>
+        <!-- Documento HTML simples -->
         <section>
             <h2>Um documento HTML simples</h2>
-            <pre>
-                <code>
+            <div class="code">
+                <pre><code>
                 &lt;!DOCTYPE html&gt;
                 &lt;html lang="pt-br"&gt;
                 &lt;head&gt;
@@ -37,8 +44,8 @@
                     &lt;p&gt;Parágrafo&lt;/p&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
-                </code>
-            </pre>
+                </code></pre>
+            </div>
             <h3>Exemplo explicado</h3>
             <p>
                 A &lt;!DOCTYPE html&gt; declaração define que este documento é um documento HTML5. <br>
@@ -49,6 +56,45 @@
                 O elemento &lt;h1&gt; define um grande título. <br>
                 O elemento &lt;p&gt; define um parágrafo.
             </p>
+        </section>
+        <hr>
+        <!-- O que é um elemento HTML?-->
+        <section>
+            <h1>O que é um elemento HTML?</h1>
+            <p>
+                Um elemento HTML é definido por uma tag start, algum conteúdo e uma tag end: <br>
+                &lt;h1&gt;Meu primeiro titulo&lt;/h1&gt; <br>
+                &lt;p&gt;Meu primeiro parágrafo&lt;/p&gt;
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag inicial</th>
+                        <th>Conteudo do elemento</th>
+                        <th>Tag final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Meu primeiro titulo</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Meu primeiro parágrafo</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td><i>none</i></td>
+                        <td><i>none</i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <p><strong>Nota:</strong> Alguns elementos HTML não têm conteúdo (como o elemento &lt;br&gt;). Esses elementos são chamados de elementos vazios. Elementos vazios não têm uma tag final!</p>
+            </div>
         </section>
     </main>
 </body>
